@@ -14,13 +14,13 @@ const Women = () => {
   // let products = useSelector((state) => state.fetchDataReducer.products[0]);
   let dispatch = useDispatch();
 
-  let womenProducts = products.filter((product) => product.category == "women's clothing");
+  let womenProducts = products.filter((product) => product.category === "women's clothing");
   console.log(womenProducts);
 
   // console.log(products);
   useEffect(() => {
     dispatch(fetchAllDataAction())
-  }, [])
+  }, [dispatch])
   return (
     <div className='menproducts-wrapper px-5'>
       <div className='fluid-container'>

@@ -13,7 +13,7 @@ export const ProductDetail = () => {
   let dispatch = useDispatch()
   useEffect(() => {
     dispatch(fetchSingleProduct(id))
-  }, [])
+  }, [id])
 
   const addCart = (item) =>{
     console.log("addcart");

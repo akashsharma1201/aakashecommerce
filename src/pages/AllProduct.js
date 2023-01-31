@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Productcard from '../components/Productcard';
 import { fetchAllDataAction } from '../redux/actions/fetchDataAction';
 import "./AllProducts.css";
-import { useParams } from 'react-router-dom';
+
 const AllProduct = () => {
 
 
@@ -15,7 +15,7 @@ const AllProduct = () => {
     useEffect(() => {
         dispatch(fetchAllDataAction())
     
-    }, [])
+    }, [dispatch])
     return (
         <div className='allproducts=wrapper px-5'>
             <div className='fluid-container'>

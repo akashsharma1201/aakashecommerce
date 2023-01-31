@@ -11,12 +11,12 @@ const Electronics = () => {
   
   let dispatch = useDispatch();
 
-  let electronics = products.filter((product) => product.category == "electronics");
+  let electronics = products.filter((product) => product.category === "electronics");
   console.log(electronics);
 
   useEffect(() => {
     dispatch(fetchAllDataAction())
-  }, [])
+  }, [dispatch])
 
   return (
     <div className='womenproducts-wrapper px-5'>

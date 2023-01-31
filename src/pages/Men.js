@@ -17,13 +17,13 @@ const Men = () => {
   // let products = useSelector((state) => state.fetchDataReducer.products[0]);
   let dispatch = useDispatch();
 
-  let menProducts = products.filter((product) => product.category == "men's clothing");
+  let menProducts = products.filter((product) => product.category === "men's clothing");
   console.log(menProducts);
 
   // console.log(products);
   useEffect(() => {
     dispatch(fetchAllDataAction())
-  }, [])
+  }, [dispatch])
   return (
     <div className='menproducts-wrapper px-5'>
       <div className='fluid-container'>

@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <div className='navbar-wrapper'>
             <nav>
-                <div className='logo'><img width={50} src='https://png.pngtree.com/png-clipart/20210311/original/pngtree-e-commerce-business-owners-better-understand-the-financial-side-of-their-png-image_6009252.png' /></div>
+                <div className='logo'><img alt='logo' width={50} src='https://png.pngtree.com/png-clipart/20210311/original/pngtree-e-commerce-business-owners-better-understand-the-financial-side-of-their-png-image_6009252.png' /></div>
                 {/* <div className="menu-box mobile" > */}
                 <div className="menu-box mobile" id={menuToggle ? "showMenu" : "hideMenu"}>
                     <RxCross2 className='d-md-none cross-icon' onClick={() => { setMenuToggle(!menuToggle) }} />
