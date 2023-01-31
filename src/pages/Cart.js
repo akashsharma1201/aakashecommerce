@@ -34,7 +34,7 @@ const Cart = () => {
                                 return (
                                     <div className='d-flex px-4 py-2 my-4 border' key={index}>
                                         <div className='d-flex align-items-center'>
-                                            <div className='p-3'><img width={150} alt="image" src={product.image} /></div>
+                                            <div className='p-3'><img width={150} alt="image3" src={product.image} /></div>
 
                                             <div className='product-description col-6'>
                                                 <p>{product.description.substring(0, 200)}</p>

@@ -24,7 +24,7 @@ export const ProductDetail = () => {
       <div className='container-fluid'>
         <div className='row py-5'>
           <div className='col-md-6'>
-            <div className='image-box'><img src={product?.image} /></div>
+            <div className='image-box'><img src={product?.image} alt="image8" /></div>
           </div>
           <div className='col-md-6'>
             <div className='product-detail-box'>

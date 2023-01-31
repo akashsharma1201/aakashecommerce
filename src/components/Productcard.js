@@ -9,7 +9,7 @@ const Productcard = ({ product }) => {
         <div className='col-md-4 mt-4' >
             <Link to={`/product/${product.id}`}>
                 <div className='prodcut-card h-100'>
-                    <div className='image-box'><img alt='image' className='img-fluid' src={product.image} /></div>
+                    <div className='image-box'><img alt='image2' className='img-fluid' src={product.image} /></div>
                     <div className='prodcut-card-body'>
                         <div className='content px-2'>
                             <p className='title'>{product.title.substring(0, 35)}</p>
